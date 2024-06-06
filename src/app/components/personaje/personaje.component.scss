@@ -1,0 +1,21 @@
+.personaje-card {
+    width: 400px;
+    margin: 8px;
+    border-radius: 15px;
+    background: rgb(40,23,154);
+    background: linear-gradient(45deg, rgb(146, 124, 51) 17%, rgb(195, 167, 199) 71%);
+}
+
+mat-card {
+    background-color: white;
+}
+
+img {
+    border-radius: 10px;
+}
+
+mat-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}

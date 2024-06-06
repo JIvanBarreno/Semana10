@@ -1,0 +1,13 @@
+<div class="data">
+    <h1>Listado Personajes</h1>
+    <div class="personajes">
+        @for (personaje of dataPersonajes.items; track personaje.id) {
+            <app-personaje [personaje]="personaje"></app-personaje>
+        }
+    </div>
+    <div class="pages">
+        <button (click)="prevPage()" mat-stroked-button color="primary">Pagina Anterior</button>
+        <button mat-stroked-button color="accent">{{dataPersonajes.page}} de {{dataPersonajes.pages}} paginas</button>
+        <button (click)="nextPage()" mat-stroked-button color="primary">Pagina Siguiente</button>
+    </div>
+</div>

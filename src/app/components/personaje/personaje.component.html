@@ -1,0 +1,14 @@
+<mat-card class="personaje-card">
+    <mat-card-header>
+        <mat-card-title-group>
+            <mat-card-title>{{personaje.name}}</mat-card-title>
+            <mat-card-subtitle><b>Gender: </b>{{personaje.gender}}</mat-card-subtitle>
+            <mat-card-subtitle><b>Status: </b>{{personaje.status}}</mat-card-subtitle>
+            <mat-card-subtitle><b>Species: </b>{{personaje.species}}</mat-card-subtitle>
+            <img mat-card-lg-image src="{{personaje.image}}">
+        </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+        {{personaje.createdAt}}
+    </mat-card-content>
+</mat-card>
